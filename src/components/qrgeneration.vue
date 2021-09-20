@@ -412,7 +412,8 @@ export default {
 .zip-active svg path,
 .org-active svg path,
 .facebook-active svg path,
-.instagram-active svg path {
+.instagram-active svg path,
+.message-active svg path {
   fill: #10b981;
 }
 .message-box .inp-text {
@@ -433,6 +434,7 @@ export default {
 .message-active .inp-text {
   top: -15px;
   transition: 0.2s;
+  color: rgb(42 104 179);
 }
 
 .name-active::after,
