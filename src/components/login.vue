@@ -9,22 +9,22 @@
         <form action="index.html">
           <img src="../assets/avatar.svg" />
           <h2 class="title">Welcome</h2>
-          <div class="input-div one">
+          <div class="input-div one" v-bind:class="animate ? 'focus' : ''">
             <div class="i">
-              <i class="fas fa-user"></i>
+              <svg fill="rgb(56 211 159)" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="24" version="1.1" width="24"><g transform="translate(0 -1028.4)"><path d="m8.4062 1041.1c-2.8856 1.3-4.9781 4-5.3437 7.3 0 1.1 0.8329 2 1.9375 2h14c1.105 0 1.938-0.9 1.938-2-0.366-3.3-2.459-6-5.344-7.3-0.649 1.3-2.011 2.3-3.594 2.3s-2.9453-1-3.5938-2.3z" fill="rgb(56 211 159)"/><path d="m17 4a5 5 0 1 1 -10 0 5 5 0 1 1 10 0z" fill="rgb(56 211 159)" transform="translate(0 1031.4)"/><path d="m12 11c-1.277 0-2.4943 0.269-3.5938 0.75-2.8856 1.262-4.9781 3.997-5.3437 7.25 0 1.105 0.8329 2 1.9375 2h14c1.105 0 1.938-0.895 1.938-2-0.366-3.253-2.459-5.988-5.344-7.25-1.1-0.481-2.317-0.75-3.594-0.75z" fill="rgb(56 211 159)" transform="translate(0 1028.4)"/></g></svg>
             </div>
             <div class="div">
               <h5>Username</h5>
-              <input type="text" class="input" />
+              <input type="text" class="input" @click="animate = true"/>
             </div>
           </div>
-          <div class="input-div pass">
+          <div class="input-div pass" v-bind:class="animate2 ? 'focus' : ''">
             <div class="i">
-              <i class="fas fa-lock"></i>
+              <svg fill="rgb(56 211 159)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve"><g id="info"/><g id="icons"><path d="M20,10h-4H8l0-2.8c0-2.1,1.5-4,3.6-4.2C14,2.8,16,4.7,16,7l0,0c0,0.6,0.4,1,1,1h1c0.6,0,1-0.4,1-1l0,0   c0-3.8-3-6.9-6.8-7C8.3-0.1,5,3.1,5,7v3H4c-1.1,0-2,0.9-2,2v7c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5v-7C22,10.9,21.1,10,20,10z    M13,17.7V19c0,0.5-0.5,1-1,1s-1-0.5-1-1v-1.3c-0.6-0.3-1-1-1-1.7c0-1.1,0.9-2,2-2s2,0.9,2,2C14,16.7,13.6,17.4,13,17.7z" id="password"/></g></svg>
             </div>
             <div class="div">
               <h5>Password</h5>
-              <input type="password" class="input" />
+              <input type="password" class="input" @click="animate2 = true"/>
             </div>
           </div>
           <!-- <a href="#" class="forgot-pass">Forgot Password?</a> -->
@@ -35,7 +35,18 @@
     </div>
   </body>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      animate: false,
+      animate2: false
+      
+    }
+  }}
+</script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 *{
 	padding: 0;
 	margin: 0;
