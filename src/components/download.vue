@@ -2,34 +2,8 @@
     <body class="upload-body">
     <div class="upload-container">
         <div class="main-panel">
-            <div class="user-text">
-                HEY ROHAN WELCOME !
-            </div>
-            
-            <div class="add-box">
-                <div class="upload-text">
-                    Upload your files
-                </div>
-                <div class="drop-box">
-                    <img class="files-icon" src="../assets/files.png" alt="">
-                    <div class="drop-text">
-                        Drag & Drop your files here
-                    </div>
-                </div>
-            </div>
-            <div class="qr-cover">
-                <div class="qr-btn">
-                    <div class="qr-text">
-                        Click Here To Generate QR Code
-                    </div>
-
-                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" id="Layer_1"
-                        viewBox="0 0 200 200">
-                        <title />
-                        <path
-                            d="M75,15H35A20.06,20.06,0,0,0,15,35V75A20.06,20.06,0,0,0,35,95H75A20.06,20.06,0,0,0,95,75V35A20.06,20.06,0,0,0,75,15Zm0,60H35V35H75Zm0,30H35a20.06,20.06,0,0,0-20,20v40a20.06,20.06,0,0,0,20,20H75a20.06,20.06,0,0,0,20-20V125A20.06,20.06,0,0,0,75,105Zm0,60H35V125H75ZM165,15H125a20.06,20.06,0,0,0-20,20V75a20.06,20.06,0,0,0,20,20h40a20.06,20.06,0,0,0,20-20V35A20.06,20.06,0,0,0,165,15Zm0,60H125V35h40ZM50,65H60a5.38,5.38,0,0,0,5-5V50a5.38,5.38,0,0,0-5-5H50a5.38,5.38,0,0,0-5,5V60A5.38,5.38,0,0,0,50,65Zm0,90H60a5.38,5.38,0,0,0,5-5V140a5.38,5.38,0,0,0-5-5H50a5.38,5.38,0,0,0-5,5v10A5.38,5.38,0,0,0,50,155Zm90-90h10a5.38,5.38,0,0,0,5-5V50a5.38,5.38,0,0,0-5-5H140a5.38,5.38,0,0,0-5,5V60A5.38,5.38,0,0,0,140,65Zm-30,80h10a5.38,5.38,0,0,0,5-5V130a5.38,5.38,0,0,1,5-5h10a5.38,5.38,0,0,0,5-5V110a5.38,5.38,0,0,0-5-5H110a5.38,5.38,0,0,0-5,5v30a5.38,5.38,0,0,0,5,5Zm70-40H170a5.38,5.38,0,0,0-5,5v30a5.38,5.38,0,0,0,5,5h10a5.38,5.38,0,0,0,5-5V110A5.38,5.38,0,0,0,180,105Zm-60,60H110a5.38,5.38,0,0,0-5,5v10a5.38,5.38,0,0,0,5,5h10a5.38,5.38,0,0,0,5-5V170A5.38,5.38,0,0,0,120,165Zm60,0H170a5.38,5.38,0,0,1-5-5V150a5.38,5.38,0,0,0-5-5H130a5.38,5.38,0,0,0-5,5v10a5.38,5.38,0,0,0,5,5h10a5.38,5.38,0,0,1,5,5v10a5.38,5.38,0,0,0,5,5h30a5.38,5.38,0,0,0,5-5V170A5.38,5.38,0,0,0,180,165Z" />
-                    </svg>
-                </div>
+            <div class="drive-text">
+                Welcome To My Drive !
             </div>
         </div>
 
@@ -72,22 +46,8 @@
                     </div>
                 </div>
 
-                <div class="delete-file">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 14 18">
-                        <title />
-                        <desc />
-                        <defs />
-                        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
-                            <g fill="white" id="Core" transform="translate(-299.000000, -129.000000)">
-                                <g id="delete" transform="translate(299.000000, 129.000000)">
-                                    <path
-                                        d="M1,16 C1,17.1 1.9,18 3,18 L11,18 C12.1,18 13,17.1 13,16 L13,4 L1,4 L1,16 L1,16 Z M14,1 L10.5,1 L9.5,0 L4.5,0 L3.5,1 L0,1 L0,3 L14,3 L14,1 L14,1 Z"
-                                        id="Shape" />
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
+                <div class="download-file">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M0 0h48v48h-48z" fill="none"/><path fill="white" d="M38.71 20.07c-1.36-6.88-7.43-12.07-14.71-12.07-5.78 0-10.79 3.28-13.3 8.07-6.01.65-10.7 5.74-10.7 11.93 0 6.63 5.37 12 12 12h26c5.52 0 10-4.48 10-10 0-5.28-4.11-9.56-9.29-9.93zm-4.71 5.93l-10 10-10-10h6v-8h8v8h6z"/></svg>
                 </div>
             </div>
 
@@ -146,8 +106,8 @@
         flex-direction: column;
     }
 
-    .user-text {
-        font-size: 50px;
+    .drive-text {
+        font-size: 60px;
         font-weight: 700;
         text-align: center;
         color: rgb(250 250 250/0.9);
@@ -172,12 +132,12 @@
         white-space: nowrap;
     }
 
-    .delete-file {
+    .download-file {
         display: flex;
         justify-content: center;
         align-items: center;
         width: min-content;
-        background: rgb(218, 26, 26);
+        background: #059669;
         padding: 8px 12px;
         border-radius: 8px;
         cursor: pointer;
@@ -185,14 +145,15 @@
         margin-left: 10px;
     }
 
-    .delete-file:active,
+    .download-file:active,
     .add-btn:active {
         transform: scale(0.95);
     }
 
-    .delete-file svg {
+    .download-file svg {
         height: 18px;
         width: 18px;
+        transform: scale(1.3);
     }
 
     .delete-text {

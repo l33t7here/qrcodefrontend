@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import login from '../components/login.vue'
 import signup from '../components/signup.vue'
 import dashboard from '../components/dashboard.vue'
+import download from '../components/download.vue'
+import qrgeneration from '../components/qrgeneration.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +23,16 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: dashboard
+  },
+  {
+    path: '/download',
+    name: 'download',
+    component: download
+  },
+  {
+    path: '/qrgeneration',
+    name: 'qrgeneration',
+    component: qrgeneration
   }
 ]
 
