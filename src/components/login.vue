@@ -15,7 +15,7 @@
             </div>
             <div class="div">
               <h5>Username</h5>
-              <input type="text" class="input" @click="animate = true"/>
+              <input type="text" class="input" @click="animate = true, animate2 = (false || password.length != 0 )" v-model='username'/>
             </div>
           </div>
           <div class="input-div pass" v-bind:class="animate2 ? 'focus' : ''">
@@ -24,26 +24,40 @@
             </div>
             <div class="div">
               <h5>Password</h5>
-              <input type="password" class="input" @click="animate2 = true"/>
+              <input type="password" class="input" @click="animate2 = true,animate = (false || username.length != 0 )" v-model='password'/>
             </div>
           </div>
           <!-- <a href="#" class="forgot-pass">Forgot Password?</a> -->
-          <div class="btn">Login</div>
-          <a href="#" class="create-ac">Click Here To Create Account</a>
+          <div @click='signin()' class="btn">Login</div>
+          <a @click="sendtosignup()" class="create-ac">Click Here To Create Account</a>
         </form>
       </div>
     </div>
   </body>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      animate: false,
-      animate2: false
-      
-    }
-  }}
+import axios from 'axios';
+export default{
+	data(){
+		return {
+			animate : false,
+			animate2 : false,
+			username : '',
+			password : ''
+		}
+	},
+	methods : {
+		sendtosignup(){
+			this.$router.push('/signup');
+		},
+		signin(){
+			axios.get(`/login?username=${this.username}&password=${this.password}`).then((data) =>{
+				localStorage.setItem('token', data.data.tokens);
+				this.$router.push('/')
+			})
+		}
+	}
+}
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
