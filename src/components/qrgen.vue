@@ -253,10 +253,10 @@
       </div>
 
       <div class="submit-cover">
-        <div class="submit-btn"  @click="sumbitenable ? generateQrcode() : ''">
+        <button class="submit-btn"  @click="sumbitenable ? generateQrcode() : ''" :disabled="sumbitenable = false" :class="sumbitenable ? '' : 'btn-disabled'">
           Submit
           <svg
-            :fill="sumbitenable ? 'white' : 'red'"
+            fill="white"
             heigh="25px"
             width="25px"
             xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +269,7 @@
               />
             </g>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
   </body>
@@ -546,17 +546,19 @@ textarea::-webkit-scrollbar {
 
 .submit-btn {
   background: rgb(47 145 255);
-  padding: 12px 25px;
+  padding: 14px 25px 12px 25px;
   border-radius: 50px;
   width: min-content;
   font-size: 20px;
   font-weight: 600;
   color: white;
   margin: auto;
-  box-shadow: 0 0 15px rgb(0 0 0/0.6);
+  box-shadow: 0 0 15px rgb(0 0 0/0.4);
   cursor: pointer;
   display: flex;
   margin-bottom: 10px;
+    border: none;
+
 }
 
 .submit-btn svg {
@@ -613,6 +615,10 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 400px;
   height: 400px;
 }
-
+.btn-disabled{
+    background: gray !important;
+    cursor: not-allowed;
+    transform: unset !important;
+}
 
 </style>

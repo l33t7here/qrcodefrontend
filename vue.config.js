@@ -1,1 +1,1 @@
-module.exports = { devServer: { proxy: 'http://localhost:9000'}};
+module.exports = { devServer: { proxy: 'https://efb4-157-34-52-216.ngrok.io/'}};
